@@ -1,0 +1,28 @@
+DETAILED EDA SUMMARY
+============================================================
+
+Number of classes : 20
+Training images   : 3205
+Validation images : 100
+Test images       : 100
+Total images      : 3405
+
+CLASS BALANCE
+------------------------------------------------------------
+Minimum images/class : 133
+Maximum images/class : 187
+Average images/class : 160.25
+Standard deviation   : 15.97
+Maximum/Minimum ratio: 1.41
+
+IMAGE DIMENSIONS
+------------------------------------------------------------
+(224, 224): 3405 images
+
+COLOR MODES
+------------------------------------------------------------
+RGB: 3405 images
+
+IMAGE FORMATS
+------------------------------------------------------------
+JPEG: 3405 images

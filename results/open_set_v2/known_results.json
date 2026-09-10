@@ -1,0 +1,38 @@
+[
+    {
+        "image": "1.jpg",
+        "predicted_index": 2,
+        "predicted_class": "ABYSSINIAN GROUND HORNBILL",
+        "confidence": 0.8159075379371643,
+        "mean_confidence": 0.8662948608398438,
+        "tta_agreement": 1.0,
+        "similarity": 0.8786916136741638,
+        "margin": 0.7551693916320801,
+        "support_score": 0.8917077869176865,
+        "status": "NOT SUPPORTED"
+    },
+    {
+        "image": "2.jpg",
+        "predicted_index": 19,
+        "predicted_class": "AMERICAN KESTREL",
+        "confidence": 0.999881386756897,
+        "mean_confidence": 0.999549388885498,
+        "tta_agreement": 1.0,
+        "similarity": 0.9596036672592163,
+        "margin": 0.999788761138916,
+        "support_score": 0.989699548482895,
+        "status": "SUPPORTED"
+    },
+    {
+        "image": "4.jpg",
+        "predicted_index": 11,
+        "predicted_class": "ALEXANDRINE PARAKEET",
+        "confidence": 0.8892536759376526,
+        "mean_confidence": 0.893090546131134,
+        "tta_agreement": 1.0,
+        "similarity": 0.8777657151222229,
+        "margin": 0.8213132619857788,
+        "support_score": 0.9088089734315872,
+        "status": "NOT SUPPORTED"
+    }
+]

@@ -1,0 +1,7 @@
+{
+    "method": "Confidence + Similarity + Margin + CNN/Centroid Agreement",
+    "minimum_known_acceptance": 0.9,
+    "validation_images": 100,
+    "unknown_images": 19,
+    "best_rule": null
+}

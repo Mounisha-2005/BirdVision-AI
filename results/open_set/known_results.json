@@ -1,0 +1,74 @@
+[
+    {
+        "image": "1.jpg",
+        "predicted_index": 2,
+        "predicted_class": "ABYSSINIAN GROUND HORNBILL",
+        "confidence": 0.8159075379371643,
+        "mean_confidence": 0.8662948608398438,
+        "margin": 0.7551693916320801,
+        "tta_agreement": 1.0,
+        "tta_predictions": [
+            "ABYSSINIAN GROUND HORNBILL",
+            "ABYSSINIAN GROUND HORNBILL",
+            "ABYSSINIAN GROUND HORNBILL",
+            "ABYSSINIAN GROUND HORNBILL",
+            "ABYSSINIAN GROUND HORNBILL"
+        ],
+        "max_similarity": 0.8786916136741638,
+        "top5_similarity": 0.8449083566665649,
+        "best_competing_similarity": 0.7712450623512268,
+        "similarity_gap": 0.10744655132293701,
+        "supported": false,
+        "status": "NOT SUPPORTED",
+        "expected_class": "ABYSSINIAN GROUND HORNBILL",
+        "correct": false
+    },
+    {
+        "image": "2.jpg",
+        "predicted_index": 19,
+        "predicted_class": "AMERICAN KESTREL",
+        "confidence": 0.999881386756897,
+        "mean_confidence": 0.999549388885498,
+        "margin": 0.999788761138916,
+        "tta_agreement": 1.0,
+        "tta_predictions": [
+            "AMERICAN KESTREL",
+            "AMERICAN KESTREL",
+            "AMERICAN KESTREL",
+            "AMERICAN KESTREL",
+            "AMERICAN KESTREL"
+        ],
+        "max_similarity": 0.9596036672592163,
+        "top5_similarity": 0.9280706644058228,
+        "best_competing_similarity": 0.7827332019805908,
+        "similarity_gap": 0.1768704652786255,
+        "supported": true,
+        "status": "SUPPORTED",
+        "expected_class": "AMERICAN KESTREL",
+        "correct": true
+    },
+    {
+        "image": "4.jpg",
+        "predicted_index": 11,
+        "predicted_class": "ALEXANDRINE PARAKEET",
+        "confidence": 0.8892536759376526,
+        "mean_confidence": 0.893090546131134,
+        "margin": 0.8213132619857788,
+        "tta_agreement": 1.0,
+        "tta_predictions": [
+            "ALEXANDRINE PARAKEET",
+            "ALEXANDRINE PARAKEET",
+            "ALEXANDRINE PARAKEET",
+            "ALEXANDRINE PARAKEET",
+            "ALEXANDRINE PARAKEET"
+        ],
+        "max_similarity": 0.8777657151222229,
+        "top5_similarity": 0.8701836466789246,
+        "best_competing_similarity": 0.7969789505004883,
+        "similarity_gap": 0.08078676462173462,
+        "supported": false,
+        "status": "NOT SUPPORTED",
+        "expected_class": "ALEXANDRINE PARAKEET",
+        "correct": false
+    }
+]

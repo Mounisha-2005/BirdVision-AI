@@ -1,0 +1,15 @@
+{
+    "method": "Confidence + Similarity + Margin + CNN/Centroid Agreement",
+    "validation_images": 100,
+    "unknown_images": 19,
+    "best_rule": {
+        "confidence_threshold": 0.7,
+        "similarity_threshold": 0.7100000000000002,
+        "margin_threshold": 0.5,
+        "known_acceptance": 0.8,
+        "unknown_rejection": 0.631578947368421,
+        "false_rejection_rate": 0.19999999999999996,
+        "false_acceptance_rate": 0.368421052631579,
+        "balanced_accuracy": 0.7157894736842105
+    }
+}

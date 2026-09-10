@@ -1,0 +1,18 @@
+BIRD CLASSIFICATION DATASET CLEANUP LOG
+======================================================================
+
+Cleanup date/time: 2026-09-07 21:22:17
+
+TRAINING DUPLICATE REMOVED:
+C:\Users\Dell\Desktop\Bird_Classification_CNN\dataset\Desktop\Bird_Classification_CNN\dataset\train\ABBOTTS BABBLER\005.jpg
+
+VALIDATION DUPLICATES REMOVED:
+C:\Users\Dell\Desktop\Bird_Classification_CNN\dataset\Desktop\Bird_Classification_CNN\dataset\valid\ABBOTTS BABBLER\1.jpg
+C:\Users\Dell\Desktop\Bird_Classification_CNN\dataset\Desktop\Bird_Classification_CNN\dataset\valid\ABBOTTS BABBLER\2.jpg
+
+TRAINING IMAGES MOVED TO VALIDATION:
+C:\Users\Dell\Desktop\Bird_Classification_CNN\dataset\Desktop\Bird_Classification_CNN\dataset\train\ABBOTTS BABBLER\001.jpg
+C:\Users\Dell\Desktop\Bird_Classification_CNN\dataset\Desktop\Bird_Classification_CNN\dataset\train\ABBOTTS BABBLER\002.jpg
+
+TEST SET:
+No test images were modified.

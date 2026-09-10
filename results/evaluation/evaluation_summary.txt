@@ -1,0 +1,8 @@
+BIRD CLASSIFICATION CNN - FINAL EVALUATION
+======================================================================
+
+Total test images : 100
+Correct predictions : 87
+Incorrect predictions : 13
+Test loss : 0.4793
+Test accuracy : 87.00%
