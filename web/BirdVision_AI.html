@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BirdVision AI</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🐦 BirdVision <span>AI</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#overview">Overview</a>
+            <a href="#prediction">Prediction</a>
+            <a href="#model">CNN Model</a>
+            <a href="#classes">Classes</a>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            CNN ONLINE
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="overview" class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                CUSTOM CNN · 224×224 RGB · OPEN-SET VALIDATION
+            </div>
+
+            <h1>
+                Identify a bird.<br>
+                <span>Understand the image.</span>
+            </h1>
+
+            <p>
+                BirdVision AI is a deep-learning based bird classification
+                system that uses a custom Convolutional Neural Network to
+                identify bird species from images.
+            </p>
+
+            <a href="#prediction" class="primary-btn">
+                Start Prediction →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Prediction Section -->
+    <section id="prediction" class="section">
+
+        <div class="section-title">
+            <div>
+                <div class="small-label">LIVE INFERENCE</div>
+                <h2>Bird Prediction</h2>
+            </div>
+        </div>
+
+
+        <div class="prediction-grid">
+
+            <!-- Upload Card -->
+            <div class="card upload-card">
+
+                <h3>Upload Bird Image</h3>
+
+                <p>
+                    Select a bird image to run the trained CNN model.
+                </p>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/*"
+                    hidden
+                >
+
+                <button
+                    class="upload-btn"
+                    onclick="document.getElementById('imageInput').click()"
+                >
+                    📁 Choose Image
+                </button>
+
+                <div class="preview-container">
+                    <img id="previewImage" alt="Bird preview">
+                </div>
+
+                <button
+                    id="predictButton"
+                    class="predict-btn"
+                    disabled
+                >
+                    Predict Bird
+                </button>
+
+            </div>
+
+
+            <!-- Result Card -->
+            <div class="card result-card">
+
+                <div class="result-header">
+                    <span>MODEL RESULT</span>
+                    <span id="modelStatus">Waiting...</span>
+                </div>
+
+                <div id="resultContent">
+
+                    <div class="result-placeholder">
+                        <div class="bird-icon">🐦</div>
+
+                        <h3>No Prediction Yet</h3>
+
+                        <p>
+                            Upload an image to see the CNN prediction.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Model Section -->
+    <section id="model" class="section">
+
+        <div class="small-label">MODEL ARCHITECTURE</div>
+
+        <h2>CNN Model Pipeline</h2>
+
+        <div class="pipeline">
+
+            <div class="pipeline-step">
+                <div class="step-number">01</div>
+                <h3>Input Image</h3>
+                <p>224 × 224 RGB image</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="pipeline-step">
+                <div class="step-number">02</div>
+                <h3>Convolution</h3>
+                <p>Feature extraction</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="pipeline-step">
+                <div class="step-number">03</div>
+                <h3>Deep Features</h3>
+                <p>CNN representation</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="pipeline-step">
+                <div class="step-number">04</div>
+                <h3>Classification</h3>
+                <p>20 bird classes</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Classes Section -->
+    <section id="classes" class="section">
+
+        <div class="small-label">DATASET</div>
+
+        <h2>Supported Bird Classes</h2>
+
+        <div id="classList" class="class-list">
+
+            <div class="class-item">Loading classes...</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div>
+            🐦 <strong>BirdVision AI</strong>
+        </div>
+
+        <div>
+            Custom CNN · TensorFlow.js
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

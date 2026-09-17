@@ -1,9 +1,0 @@
-{
-    "threshold": 0.6847005814313889,
-    "method": "5th_percentile_validation_similarity",
-    "validation_images": 100,
-    "minimum_similarity": 0.6040008068084717,
-    "maximum_similarity": 0.9765892028808594,
-    "mean_similarity": 0.8534297496080399,
-    "median_similarity": 0.8770601451396942
-}

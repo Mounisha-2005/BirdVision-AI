@@ -1,7 +1,0 @@
-{
-    "confidence_threshold": 0.5,
-    "similarity_threshold": 0.8200000000000002,
-    "known_acceptance": 0.71,
-    "unknown_rejection": 0.8947368421052632,
-    "balanced_accuracy": 0.8023684210526316
-}

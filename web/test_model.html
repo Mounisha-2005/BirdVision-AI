@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BirdVision CNN Model Test</title>
+</head>
+<body>
+    <h2>BirdVision CNN — TensorFlow.js Test</h2>
+    <p id="status">Loading model...</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+
+    <script>
+        async function testModel() {
+            try {
+                const model = await tf.loadGraphModel("model/tfjs/model.json");
+
+                const input = tf.zeros([1, 224, 224, 3]);
+                const output = model.execute(input);
+
+                const outputTensor = Array.isArray(output) ? output[0] : output;
+
+                document.getElementById("status").innerHTML =
+                    "✅ MODEL TEST PASSED<br>" +
+                    "Input shape: [1, 224, 224, 3]<br>" +
+                    "Output shape: [" + outputTensor.shape.join(", ") + "]";
+
+                input.dispose();
+
+                if (Array.isArray(output)) {
+                    output.forEach(t => t.dispose());
+                } else {
+                    output.dispose();
+                }
+
+            } catch (error) {
+                document.getElementById("status").innerHTML =
+                    "❌ MODEL TEST FAILED<br><pre>" + error + "</pre>";
+                console.error(error);
+            }
+        }
+
+        testModel();
+    </script>
+</body>
+</html>
